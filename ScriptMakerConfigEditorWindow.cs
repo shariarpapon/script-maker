@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEngine;
 using Wiz.CustomEditor;
 
-namespace ScriptMaker
+namespace ScriptMakerUtility
 {
     public class ScriptMakerConfigEditorWindow : TabDisplayerEditorWindow
     {

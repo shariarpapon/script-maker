@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEditor;
 
-namespace ScriptMaker
+namespace ScriptMakerUtility
 {
     [System.Serializable]
     public sealed class Config
