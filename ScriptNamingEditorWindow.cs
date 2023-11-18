@@ -53,6 +53,7 @@ namespace CustomScriptMakerUtility
             Instance.maxSize = size;
             Instance.minSize = size;
             Instance.position = new Rect(mp.x - size.x/2, mp.y - size.y/2, size.x, size.y);
+            Instance.ShowModal();
         }
 
 
