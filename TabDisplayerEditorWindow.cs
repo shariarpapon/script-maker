@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
 
-namespace Wiz.CustomEditor
+namespace CustomScriptMakerUtility
 {
     public abstract class TabDisplayerEditorWindow : EditorWindow
     {
