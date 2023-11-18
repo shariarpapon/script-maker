@@ -19,7 +19,7 @@ namespace CustomScriptMakerUtility
 
     public static class MenuItemScriptGenerator
     {
-        private const string REQUIRED_NAMESPACE = "using Wiz.CustomEditor.ScriptMakerUtility;";
+        private const string REQUIRED_NAMESPACE = "using CustomScriptMakerUtility";
         private const int MENU_PRIO = 1;
         private const string CLASS_TEMP = "#required-ns#\r\nusing UnityEditor;\r\n\r\npublic static class __ScriptMaker_DynamicAssetMenuItems_ID#id#__\r\n{\r\n";
         private const string CLASS_ID_PH = "#id#";
