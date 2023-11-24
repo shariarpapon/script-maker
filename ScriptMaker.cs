@@ -34,12 +34,6 @@ namespace CustomScriptMakerUtility
         public static Config config;
         public static List<string> namespaces;
 
-        private static bool IsMenuGeneratedOnce 
-        {
-            get { return SessionState.GetBool(nameof(IsMenuGeneratedOnce), false); }
-            set  {  SessionState.SetBool(nameof(IsMenuGeneratedOnce), value); }
-        }
-
         private static readonly ScriptType[] scriptTypes = 
         {
             ScriptType.Abstract,
@@ -63,11 +57,6 @@ namespace CustomScriptMakerUtility
 
             if (!File.Exists(MenuItemScriptGenerator.GetScriptPath(SCRIPT_UID)))
                 GenerateMenu();
-            else if (!IsMenuGeneratedOnce) 
-            {
-                IsMenuGeneratedOnce = true;
-                GenerateMenu();
-            }
         }
 
         public static void GenerateMenu() 
